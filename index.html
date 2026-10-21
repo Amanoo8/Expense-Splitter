@@ -84,7 +84,7 @@
       <section id="section-members" class="py-9">
         <div class="flex items-center justify-between mb-4">
           <h2 class="font-serif text-xl font-medium tracking-tight text-ledger-ink">Group Members</h2>
-          <span id="members-count" class="font-mono text-xs text-ledger-muted">3 members</span>
+          <span id="members-count" class="font-mono text-xs text-ledger-muted"></span>
         </div>
         <div id="members-content">
           <form id="add-member-form" class="flex gap-2 items-center mb-2">
@@ -112,7 +112,7 @@
             <!-- POPULATED STATE: visible by default -->
             <ul id="members-list" class="divide-y divide-ledger-border border-t border-b border-ledger-border">
               <!-- Member 1: ram -->
-              <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-2">
+              <!-- <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-2">
                 <div class="flex items-center gap-3 min-w-0 flex-1">
                   <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-medium text-white shrink-0 select-none" style="background-color: #2F6B4F;">
                     R
@@ -125,7 +125,7 @@
                   </svg>
                 </button>
               </li>
-              <!-- Member 2: shyam -->
+             
               <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-2">
                 <div class="flex items-center gap-3 min-w-0 flex-1">
                   <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-medium text-white shrink-0 select-none" style="background-color: #3D5A80;">
@@ -139,7 +139,7 @@
                   </svg>
                 </button>
               </li>
-              <!-- Member 3: sita -->
+              
               <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-2">
                 <div class="flex items-center gap-3 min-w-0 flex-1">
                   <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-medium text-white shrink-0 select-none" style="background-color: #8C5E58;">
@@ -152,7 +152,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
-              </li>
+              </li> -->
             </ul>
             <div id="members-empty" class="text-sm text-ledger-muted py-3 italic hidden">
               No members added yet.
@@ -176,7 +176,7 @@
         </div>
         <div id="add-expense-content">
           <!-- Warning when members < 2 -->
-          <div id="expense-members-warning" class="text-sm text-ledger-muted py-3 italic hidden">
+          <div id="expense-members-warning" class="text-sm text-ledger-muted py-3 italic ">
             Add at least 2 group members to record expenses.
           </div>
 
@@ -225,9 +225,9 @@
                 id="expense-payer-select"
                 class="w-full bg-white border border-ledger-border px-3.5 py-2 text-sm text-ledger-ink rounded-sm focus:outline-none focus:border-ledger-forest transition-colors font-sans cursor-pointer"
               >
-                <option value="ram">ram</option>
+                <!-- <option value="ram">ram</option>
                 <option value="shyam">shyam</option>
-                <option value="sita">sita</option>
+                <option value="sita">sita</option> -->
               </select>
             </div>
 
@@ -244,7 +244,7 @@
                 </div>
               </div>
               <div id="split-members-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 p-3 bg-white border border-ledger-border rounded-sm">
-                <label class="flex items-center gap-2.5 text-xs font-sans text-ledger-ink cursor-pointer hover:bg-slate-100/60 px-2 py-2 rounded-sm select-none border border-transparent hover:border-ledger-border transition-colors min-h-[36px]">
+                <!-- <label class="flex items-center gap-2.5 text-xs font-sans text-ledger-ink cursor-pointer hover:bg-slate-100/60 px-2 py-2 rounded-sm select-none border border-transparent hover:border-ledger-border transition-colors min-h-[36px]">
                   <input type="checkbox" value="ram" class="split-member-checkbox rounded-sm text-ledger-forest accent-[#2F6B4F] cursor-pointer w-4 h-4 shrink-0" checked>
                   <span class="truncate break-all min-w-0">ram</span>
                 </label>
@@ -255,7 +255,7 @@
                 <label class="flex items-center gap-2.5 text-xs font-sans text-ledger-ink cursor-pointer hover:bg-slate-100/60 px-2 py-2 rounded-sm select-none border border-transparent hover:border-ledger-border transition-colors min-h-[36px]">
                   <input type="checkbox" value="sita" class="split-member-checkbox rounded-sm text-ledger-forest accent-[#2F6B4F] cursor-pointer w-4 h-4 shrink-0" checked>
                   <span class="truncate break-all min-w-0">sita</span>
-                </label>
+                </label> -->
               </div>
             </div>
 
@@ -355,14 +355,14 @@
       <section id="section-expenses" class="py-9">
         <div class="flex items-center justify-between mb-4">
           <h2 class="font-serif text-xl font-medium tracking-tight text-ledger-ink">Expenses</h2>
-          <span id="expenses-count" class="font-mono text-xs text-ledger-muted">4 expenses</span>
+          <span id="expenses-count" class="font-mono text-xs text-ledger-muted"></span>
         </div>
         <div id="expenses-content">
           <div id="expenses-list-wrapper">
             <!-- POPULATED STATE: visible by default -->
             <ul id="expenses-list" class="divide-y divide-ledger-border border-t border-b border-ledger-border">
               <!-- Expense 1: Groceries -->
-              <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
+              <!-- <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
                 <div class="flex items-start justify-between gap-3 sm:gap-4">
                   <div class="min-w-0 flex-1">
                     <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2">
@@ -390,9 +390,9 @@
                     </svg>
                   </button>
                 </div>
-              </li>
+              </li> -->
               <!-- Expense 2: Dinner -->
-              <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
+              <!-- <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
                 <div class="flex items-start justify-between gap-3 sm:gap-4">
                   <div class="min-w-0 flex-1">
                     <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2">
@@ -420,9 +420,9 @@
                     </svg>
                   </button>
                 </div>
-              </li>
+              </li> -->
               <!-- Expense 3: Coffee & Snacks -->
-              <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
+              <!-- <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
                 <div class="flex items-start justify-between gap-3 sm:gap-4">
                   <div class="min-w-0 flex-1">
                     <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2">
@@ -450,9 +450,9 @@
                     </svg>
                   </button>
                 </div>
-              </li>
+              </li> -->
               <!-- Expense 4: Cab Fare -->
-              <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
+              <!-- <li class="py-3 px-1 hover:bg-slate-100/50 transition-colors">
                 <div class="flex items-start justify-between gap-3 sm:gap-4">
                   <div class="min-w-0 flex-1">
                     <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2">
@@ -480,9 +480,9 @@
                     </svg>
                   </button>
                 </div>
-              </li>
+              </li> -->
             </ul>
-            <div id="expenses-empty" class="text-sm text-ledger-muted py-3 italic hidden">
+            <div id="expenses-empty" class="text-sm text-ledger-muted py-3 italic ">
               No expenses recorded yet.
             </div>
 
@@ -507,7 +507,7 @@
             <!-- POPULATED STATE: visible by default -->
             <ul id="balances-list" class="divide-y divide-ledger-border border-t border-b border-ledger-border">
               <!-- Member 1: ram (gets back ₹150.00) -->
-              <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-3">
+              <!-- <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-3">
                 <div class="flex items-center gap-3 min-w-0 flex-1">
                   <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-medium text-white shrink-0 select-none" style="background-color: #2F6B4F;">
                     R
@@ -517,9 +517,9 @@
                 <div class="font-mono text-sm shrink-0 ml-2 text-right">
                   <span class="text-ledger-forest font-medium">gets back ₹150.00</span>
                 </div>
-              </li>
+              </li> -->
               <!-- Member 2: shyam (settled up) -->
-              <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-3">
+              <!-- <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-3">
                 <div class="flex items-center gap-3 min-w-0 flex-1">
                   <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-medium text-white shrink-0 select-none" style="background-color: #3D5A80;">
                     S
@@ -529,9 +529,9 @@
                 <div class="font-mono text-sm shrink-0 ml-2 text-right">
                   <span class="text-ledger-muted">settled up</span>
                 </div>
-              </li>
+              </li> -->
               <!-- Member 3: sita (owes ₹150.00) -->
-              <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-3">
+              <!-- <li class="flex items-center justify-between py-2.5 px-1 hover:bg-slate-100/50 transition-colors gap-3">
                 <div class="flex items-center gap-3 min-w-0 flex-1">
                   <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-medium text-white shrink-0 select-none" style="background-color: #8C5E58;">
                     S
@@ -541,9 +541,9 @@
                 <div class="font-mono text-sm shrink-0 ml-2 text-right">
                   <span class="text-ledger-rust font-medium">owes ₹150.00</span>
                 </div>
-              </li>
+              </li> -->
             </ul>
-            <div id="balances-empty" class="text-sm text-ledger-muted py-3 italic hidden">
+            <div id="balances-empty" class="text-sm text-ledger-muted py-3 italic ">
               No members to calculate balances.
             </div>
             <p id="balances-helper-text" class="text-xs text-ledger-muted mt-3.5 font-sans">
